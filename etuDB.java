@@ -70,7 +70,7 @@ public class etuDB {
         Table queryTable = null;
 
         if(query.lastIndexOf(";") != query.length() - 1) {
-            System.out.println("Problem encountered while parsing the query. (No semicolon at the end)");
+            System.out.println("Problem encountered while parsing the query.");
             return null;
         }
         try {
