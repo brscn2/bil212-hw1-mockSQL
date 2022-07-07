@@ -125,6 +125,9 @@ public class Table {
                 if (filterColumn.equals(columns[0])) {
                     SinglyLinkedList<Row> foundRows = new SinglyLinkedList<>();
                     foundRows = indexTree.search(filterValue);
+                    if(foundRows == null) {
+                        return null;
+                    }
                     for (int i = 0; i < columnList.length; i++) {
                         Iterator<Row> it = foundRows.iterator();
                         String currentColumnQuery = queryColumns[i];
