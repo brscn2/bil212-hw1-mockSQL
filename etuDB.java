@@ -127,7 +127,6 @@ public class etuDB {
             System.out.println("Query is not valid for the chosen table.");
             return null;
         }
-        System.out.println(printSchema(tableNameQuery));
         return listedColumns;
     }
 
