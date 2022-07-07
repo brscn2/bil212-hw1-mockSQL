@@ -68,6 +68,11 @@ public class etuDB {
         String filterValue = null;
         String tableNameQuery = null;
         Table queryTable = null;
+
+        if(query.lastIndexOf(";") != query.length() - 1) {
+            System.out.println("Problem encountered while parsing the query. (No semicolon at the end)");
+            return null;
+        }
         try {
             querySplit = query.substring(0, query.length() - 1).split(" ");
             columnQuery = null;
