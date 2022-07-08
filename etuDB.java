@@ -156,6 +156,7 @@ public class etuDB {
     public void commandPrompt() {
         Scanner keyboard = new Scanner(System.in);
         String command = "";
+        System.out.println("Typing \"exit\" will terminate the program.");
         while (true) {
             System.out.print("etuDB>>");
             command = keyboard.nextLine();
