@@ -132,9 +132,7 @@ public class LinkedBinaryTree extends AbstractBinaryTree<SinglyLinkedList<Row>> 
                 return search_recursive(rootNode.getRight(), e);
             }
         } else {
-            if(rootNode.getElement().first().getRow(0).equals(e)) {
-                return rootNode.getElement();
-            }
+            return rootNode.getElement();
         }
         return null;
     }
