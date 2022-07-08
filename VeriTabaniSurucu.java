@@ -1,5 +1,3 @@
-import java.util.Currency;
-
 public class VeriTabaniSurucu {
 
     public static void main(String[] args) {
