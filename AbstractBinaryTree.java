@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
+import java.util.*;
 
 public abstract class AbstractBinaryTree<E> extends AbstractTree<E> implements BinaryTree<E>{
     public Position<E> sibling(Position<E> p) {
