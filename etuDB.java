@@ -124,7 +124,6 @@ public class etuDB {
 
         // Print the list to the screen.
         if (listedColumns == null) {
-            System.out.println("Query is not valid for the chosen table.");
             return null;
         }
         return listedColumns;
